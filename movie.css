@@ -1,0 +1,139 @@
+body {
+margin: 0;
+padding: 0;
+background: local repeat url("background.png");
+font-size: 8pt;
+font-family: Verdana, Tahoma, sans-serif;
+
+}
+
+.banner {
+display: flex;
+justify-content: center;
+background-image: url("bannerbackground.png");
+background-repeat:repeat;
+}
+
+
+.column {
+position: relative;
+display: flex;
+justify-self: center;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+.header{
+font-size: 24pt;
+font-weight: bold;
+margin-top: 20px;
+line-height: 12pt;
+text-align:center;
+
+}
+
+.title {
+font-size: 24pt;
+text-shadow: 3px 3px #999999;
+}
+
+.content,
+.overall {
+max-width: 800px;
+display: flex;
+}
+
+.overall {
+display: flex;
+flex-direction: row-reverse;
+background-color: transparent;
+}
+
+.general-overview {
+border-top-right-radius: 16px;
+background-color: #a2b964;
+}
+
+.general-overview dl {
+padding: 10px;
+}
+
+.general-overview__image img {
+border-top-right-radius: 16px;
+}
+
+.review p:first-child {
+font-size: 8pt;
+min-height: 20px;
+font-weight: bold;
+border: solid 2px grey;
+border-radius: 10px;
+padding: 8px;
+background-color: #e1d697;
+}
+
+.review img {
+float: left;
+margin-right: 5px;
+}
+
+.reviews {
+width: 550px;
+min-width: 550px;
+}
+
+.reviewbanner {
+
+display: flex;
+border-top-left-radius: 16px;
+padding-left: 12px;
+height: 83px;
+background: local repeat-x url("rottenbackground.png");
+font-size: 48pt;
+color: red;
+font-weight: bold;
+align-items: center;
+}
+
+.review__column {
+width: 254px;
+margin: 2% 1%;
+}
+
+.content {
+border: solid 4px gray;
+border-radius: 20px;
+flex-direction: column;
+}
+
+.right {
+align-self: end;
+float: right;
+}
+
+.left {
+align-self: start;
+float: left;
+}
+
+.page {
+width: 100%;
+text-align: center;
+background-color: #a2b964;
+border-radius: 0 0 16px 16px;
+}
+
+
+.footer {
+opacity: 0.50;
+right: 0;
+bottom: 0;
+position: fixed;
+
+}
+
+.w{
+display: block;
+
+}
