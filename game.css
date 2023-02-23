@@ -1,0 +1,65 @@
+/* Game container styles */
+.game-container {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Card styles */
+  .card {
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Opponent card styles */
+  .opponent-card {
+    transform: rotateY(180deg);
+  }
+  
+  /* Card hover styles */
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Card animation styles */
+  .card.animated {
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  /* Card deal animation */
+  @keyframes deal-card {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+  }
+  
+  /* Opponent card deal animation */
+  .opponent-card.dealing {
+    animation-name: deal-card;
+  }
+  
+  /* Player card deal animation */
+  .player-card.dealing {
+    animation-name: deal-card-reverse;
+  }
+  
+  /* Player card deal animation (reverse) */
+  @keyframes deal-card-reverse {
+    0% {
+      transform: translate(50%, 50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+  }
